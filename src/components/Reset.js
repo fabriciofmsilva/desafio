@@ -13,6 +13,7 @@ export class Reset extends React.Component {
     return (
       <div>
         <button
+          className="button"
           disabled={!this.props.gameover}
           onClick={this.reset}
         >

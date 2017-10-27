@@ -1,0 +1,31 @@
+.Player {
+  min-width: 200px;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  padding: 2rem;
+  background-color: #ecf0f1;
+}
+
+.Player-title {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+}
+
+.Player-life {
+  width: 100%;
+  padding: .25rem 0;
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  color: #ecf0f1;
+  background-color: #27ae60;
+  transition: width .2s ease;
+}
+
+.Player-life.warning {
+  background-color: #e67e22;
+}
+
+.Player-life.danger {
+  background-color: #e74c3c;
+}

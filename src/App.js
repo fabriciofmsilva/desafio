@@ -18,12 +18,15 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div>
-          <h1>Game</h1>
+        <main className="App">
+          <header className="App-header">
+            <h1 className="App-title">Game</h1>
+          </header>
+          <div className="App-players">
           {state.game.players.map((player) => (<Player player={player} key={player.id} />))}
-          
+          </div>
           <Reset />
-        </div>
+        </main>
       </Provider>
     );
   }

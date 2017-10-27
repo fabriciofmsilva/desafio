@@ -3,7 +3,13 @@ import { connect } from 'react-redux';
 
 import { atack } from '../actions/game';
 
+import './Player.css';
+
 export class Player extends React.Component {
+
+  getLifeColor = (life) => {
+    return life < 60 ? (life < 40 ? "danger" : "warning") : "";
+  };
 
   atack = () => {
     this.props.atack(this.props.player.id);
@@ -11,10 +17,17 @@ export class Player extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>Jogador {this.props.player.id}</h2>
-        <p>{this.props.player.life}</p>
+      <div className="Player">
+        <h2 className="Player-title">
+          Jogador {this.props.player.id}
+        </h2>
+        <div className={`Player-life ${this.getLifeColor(this.props.player.life)}`}
+          style={{ width: `${this.props.player.life}%` }}
+        >
+          {this.props.player.life}%
+        </div>
         <button
+          className="button button-danger"
           disabled={this.props.gameover}
           onClick={this.atack}
         >
