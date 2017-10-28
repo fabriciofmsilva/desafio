@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Player correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Player
+    player={
+        Object {
+            "id": 1,
+            "life": 100,
+            "name": "Jogador 1",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="Player-life "
+          style={
+                    Object {
+                              "width": "100%",
+                            }
+          }
+>
+          100
+          %
+</div>,
+        <h2
+          className="Player-title"
+>
+          Jogador 1
+</h2>,
+        <div
+          className="Player-sprite-1 walk-right"
+/>,
+        <button
+          className="button button-danger"
+          disabled={false}
+          onClick={[Function]}
+>
+          Atacar
+</button>,
+      ],
+      "className": "Player ",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            100,
+            "%",
+          ],
+          "className": "Player-life ",
+          "style": Object {
+            "width": "100%",
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          100,
+          "%",
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Jogador 1",
+          "className": "Player-title",
+        },
+        "ref": null,
+        "rendered": "Jogador 1",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "className": "Player-sprite-1 walk-right",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Atacar",
+          "className": "button button-danger",
+          "disabled": false,
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Atacar",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="Player-life "
+            style={
+                        Object {
+                                    "width": "100%",
+                                  }
+            }
+>
+            100
+            %
+</div>,
+          <h2
+            className="Player-title"
+>
+            Jogador 1
+</h2>,
+          <div
+            className="Player-sprite-1 walk-right"
+/>,
+          <button
+            className="button button-danger"
+            disabled={false}
+            onClick={[Function]}
+>
+            Atacar
+</button>,
+        ],
+        "className": "Player ",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              100,
+              "%",
+            ],
+            "className": "Player-life ",
+            "style": Object {
+              "width": "100%",
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            100,
+            "%",
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Jogador 1",
+            "className": "Player-title",
+          },
+          "ref": null,
+          "rendered": "Jogador 1",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "className": "Player-sprite-1 walk-right",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Atacar",
+            "className": "button button-danger",
+            "disabled": false,
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Atacar",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

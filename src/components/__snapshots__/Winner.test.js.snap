@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Winner correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Winner
+    gameover={false}
+    players={
+        Array [
+            Object {
+              "id": 1,
+              "life": 0,
+              "name": "Jogador 1",
+            },
+            Object {
+              "id": 2,
+              "life": 100,
+              "name": "Jogador 2",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        "Jogador 2",
+        " venceu!",
+      ],
+      "className": "Winner hidden",
+    },
+    "ref": null,
+    "rendered": Array [
+      "Jogador 2",
+      " venceu!",
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          "Jogador 2",
+          " venceu!",
+        ],
+        "className": "Winner hidden",
+      },
+      "ref": null,
+      "rendered": Array [
+        "Jogador 2",
+        " venceu!",
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`should render Winner correctly when gameover is false 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Winner
+    gameover={false}
+    players={
+        Array [
+            Object {
+              "id": 1,
+              "life": 100,
+              "name": "Jogador 1",
+            },
+            Object {
+              "id": 2,
+              "life": 100,
+              "name": "Jogador 2",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        "Jogador 1",
+        " venceu!",
+      ],
+      "className": "Winner hidden",
+    },
+    "ref": null,
+    "rendered": Array [
+      "Jogador 1",
+      " venceu!",
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          "Jogador 1",
+          " venceu!",
+        ],
+        "className": "Winner hidden",
+      },
+      "ref": null,
+      "rendered": Array [
+        "Jogador 1",
+        " venceu!",
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`should render Winner correctly when gameover is true 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Winner
+    gameover={true}
+    players={
+        Array [
+            Object {
+              "id": 1,
+              "life": 100,
+              "name": "Jogador 1",
+            },
+            Object {
+              "id": 2,
+              "life": 100,
+              "name": "Jogador 2",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        "Jogador 1",
+        " venceu!",
+      ],
+      "className": "Winner zoomIn",
+    },
+    "ref": null,
+    "rendered": Array [
+      "Jogador 1",
+      " venceu!",
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          "Jogador 1",
+          " venceu!",
+        ],
+        "className": "Winner zoomIn",
+      },
+      "ref": null,
+      "rendered": Array [
+        "Jogador 1",
+        " venceu!",
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
