@@ -5,6 +5,7 @@ import configureStore from './store/configureStore';
 
 import Player from './components/Player';
 import Reset from './components/Reset';
+import Winner from './components/Winner';
 
 import './App.css';
 
@@ -25,6 +26,7 @@ class App extends Component {
           <div className="App-players">
           {state.game.players.map((player) => (<Player player={player} key={player.id} />))}
           </div>
+          <Winner />
           <Reset />
         </main>
       </Provider>

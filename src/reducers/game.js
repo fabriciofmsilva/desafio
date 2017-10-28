@@ -4,10 +4,12 @@ const gameReducerDefaultState = {
   players: [
     {
       id: 1,
+      name: 'Jogador 1',
       life: fullLife
     },
     {
       id: 2,
+      name: 'Jogador 2',
       life: fullLife
     }
   ]

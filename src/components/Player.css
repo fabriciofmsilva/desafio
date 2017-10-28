@@ -1,9 +1,14 @@
 .Player {
-  min-width: 200px;
+  min-width: 240px;
   margin-right: 2rem;
   margin-left: 2rem;
   padding: 2rem;
   background-color: #ecf0f1;
+}
+
+.Player.dead {
+  opacity: .5;
+  transition: opacity .5s ease-in-out;
 }
 
 .Player-title {
@@ -67,26 +72,51 @@
 }
 
 @keyframes walk-left {
-  0% { background-position: 0 -580px; }
-  100% { background-position: -512px -580px; }
+  from {
+    background-position: 0 -580px;
+  }
+
+  to {
+    background-position: -512px -580px;
+  }
 }
 
 @keyframes atack-left {
-  0% { background-position: 0 -836px; }
-  100% { background-position: -320px -836px; }
+  from {
+    background-position: 0 -836px;
+  }
+
+  to {
+    background-position: -320px -836px;
+  }
 }
 
 @keyframes walk-right {
-  0% { background-position: 0 -706px; }
-  100% { background-position: -512px -706px; }
+  from {
+    background-position: 0 -706px;
+  }
+
+  to {
+    background-position: -512px -706px;
+  }
 }
 
 @keyframes atack-right {
-  0% { background-position: 0 -964px; }
-  100% { background-position: -320px -964px; }
+  from {
+    background-position: 0 -964px;
+  }
+
+  to {
+    background-position: -320px -964px;
+  }
 }
 
 @keyframes dead {
-  0% { background-position: 0px -1286px; }
-  100% { background-position: -330px -1286px; }
+  from {
+    background-position: 0px -1286px;
+  }
+
+  to {
+    background-position: -330px -1286px;
+  }
 }

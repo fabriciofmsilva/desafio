@@ -1,0 +1,32 @@
+.Winner {
+  width: 520px;
+  height: 52px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #27ae60;
+  background-color: #ecf0f1;
+  visibility: visible;
+  transition: all .5s ease-in-out;
+}
+
+.Winner.hidden {
+  display: none;
+}
+
+.Winner.zoomIn {
+  animation: zoomIn .8s;
+  animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

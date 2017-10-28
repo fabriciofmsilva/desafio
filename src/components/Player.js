@@ -29,9 +29,10 @@ export class Player extends React.Component {
       };
     });
 
-    setTimeout(() => {
+    const atackDelay = setTimeout(() => {
       this.props.atack(this.props.player.id);
       this.setState((prevState, props) => {
+        clearTimeout(atackDelay);
         return {
           state: 'walk'
         };
@@ -41,15 +42,16 @@ export class Player extends React.Component {
 
   render() {
     return (
-      <div className="Player">
+      <div className={`Player ${this.props.player.life === 0 ? 'dead' : ''}`}>
         <h2 className="Player-title">
-          Jogador {this.props.player.id}
+          {this.props.player.name}
         </h2>
         <div className={`Player-life ${this.getLifeColor(this.props.player.life)}`}
           style={{ width: `${this.props.player.life}%` }}
         >
           {this.props.player.life}%
         </div>
+        <div className={`Player-sprite-${this.props.player.id} ${this.getPlayerState()}`}></div>
         <button
           className="button button-danger"
           disabled={this.props.gameover || this.state.state === 'atack'}
@@ -57,8 +59,6 @@ export class Player extends React.Component {
         >
           Atacar
         </button>
-
-        <div className={`Player-sprite-${this.props.player.id} ${this.getPlayerState()}`}></div>
       </div>
     );
   }
