@@ -12,9 +12,6 @@ import './App.css';
 const store = configureStore();
 const state = store.getState();
 
-console.log(store);
-console.log(state);
-
 class App extends Component {
   render() {
     return (

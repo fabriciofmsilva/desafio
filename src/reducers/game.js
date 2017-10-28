@@ -17,7 +17,6 @@ const gameReducerDefaultState = {
 
 // Game Reducer
 const gameReducer = (state = gameReducerDefaultState, action) => {
-  console.log(action);
   switch (action.type) {
     case 'ATACK':
       let life;
