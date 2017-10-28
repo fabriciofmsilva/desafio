@@ -31,13 +31,7 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 80px;
-  animation: App-logo-spin infinite 20s linear;
-}
-
 .App-header {
-  margin-bottom: 2rem;
   padding: 1rem;
   color: #ecf0f1;
   background-color: rgba(0, 0, 0, .15);
@@ -50,10 +44,9 @@
 .App-players {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  max-width: 520px;
+  margin: 0 auto 2rem;
+  padding: 1rem;
+  background-color: #ecf0f1;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}

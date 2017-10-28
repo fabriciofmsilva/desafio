@@ -43,14 +43,14 @@ export class Player extends React.Component {
   render() {
     return (
       <div className={`Player ${this.props.player.life === 0 ? 'dead' : ''}`}>
-        <h2 className="Player-title">
-          {this.props.player.name}
-        </h2>
         <div className={`Player-life ${this.getLifeColor(this.props.player.life)}`}
           style={{ width: `${this.props.player.life}%` }}
         >
           {this.props.player.life}%
         </div>
+        <h2 className="Player-title">
+          {this.props.player.name}
+        </h2>
         <div className={`Player-sprite-${this.props.player.id} ${this.getPlayerState()}`}></div>
         <button
           className="button button-danger"

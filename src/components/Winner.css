@@ -1,5 +1,5 @@
 .Winner {
-  width: 520px;
+  max-width: 520px;
   height: 52px;
   margin: 2rem auto;
   padding: 1rem;
