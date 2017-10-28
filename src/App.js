@@ -20,7 +20,7 @@ class App extends Component {
       <Provider store={store}>
         <main className="App">
           <header className="App-header">
-            <h1 className="App-title">Game</h1>
+            <h1 className="App-title">The Game</h1>
           </header>
           <div className="App-players">
           {state.game.players.map((player) => (<Player player={player} key={player.id} />))}
