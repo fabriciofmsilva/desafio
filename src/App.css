@@ -21,6 +21,13 @@ h2 {
   background-color: #2980b9;
   border: none;
   border-bottom: 4px solid #1b557a;
+  outline: none;
+}
+
+.button:active {
+  position: relative;
+  top: 3px;
+  border-bottom-width: 1px;
 }
 
 .button:disabled {

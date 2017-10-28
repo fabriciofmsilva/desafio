@@ -29,3 +29,64 @@
 .Player-life.danger {
   background-color: #e74c3c;
 }
+
+.Player-sprite-1 {
+  width: 64px;
+  height: 64px;
+  margin-left: auto;
+  background-image: url("../img/player1.png");
+}
+
+.Player-sprite-2 {
+  width: 64px;
+  height: 64px;
+  background-image: url("../img/player2.png");
+}
+
+.walk-right {
+  animation: walk-right .8s steps(8) infinite;
+}
+
+.atack-right {
+  animation: atack-right .8s steps(5) infinite;
+
+  background-position: 0 -960px;
+}
+
+.walk-left {
+  animation: walk-left .8s steps(8) infinite;
+}
+
+.atack-left {
+  animation: atack-left .8s steps(5) infinite;
+}
+
+.dead {
+  background-position: -330px -1286px;
+  animation: dead .5s steps(5) 1;
+}
+
+@keyframes walk-left {
+  0% { background-position: 0 -580px; }
+  100% { background-position: -512px -580px; }
+}
+
+@keyframes atack-left {
+  0% { background-position: 0 -836px; }
+  100% { background-position: -320px -836px; }
+}
+
+@keyframes walk-right {
+  0% { background-position: 0 -706px; }
+  100% { background-position: -512px -706px; }
+}
+
+@keyframes atack-right {
+  0% { background-position: 0 -964px; }
+  100% { background-position: -320px -964px; }
+}
+
+@keyframes dead {
+  0% { background-position: 0px -1286px; }
+  100% { background-position: -330px -1286px; }
+}

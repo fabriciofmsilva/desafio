@@ -6,13 +6,37 @@ import { atack } from '../actions/game';
 import './Player.css';
 
 export class Player extends React.Component {
+  state = {
+    state: 'walk'
+  };
+
+  getPlayerState = () => {
+    if (this.props.player.life === 0) {
+      return 'dead';
+    }
+
+    return this.props.player.id === 1 ? this.state.state + '-right' : this.state.state + '-left';
+  }
 
   getLifeColor = (life) => {
     return life < 60 ? (life < 40 ? "danger" : "warning") : "";
   };
 
   atack = () => {
-    this.props.atack(this.props.player.id);
+    this.setState((prevState, props) => {
+      return {
+        state: 'atack'
+      };
+    });
+
+    setTimeout(() => {
+      this.props.atack(this.props.player.id);
+      this.setState((prevState, props) => {
+        return {
+          state: 'walk'
+        };
+      });
+    }, 800);
   };
 
   render() {
@@ -28,11 +52,13 @@ export class Player extends React.Component {
         </div>
         <button
           className="button button-danger"
-          disabled={this.props.gameover}
+          disabled={this.props.gameover || this.state.state === 'atack'}
           onClick={this.atack}
         >
           Atacar
         </button>
+
+        <div className={`Player-sprite-${this.props.player.id} ${this.getPlayerState()}`}></div>
       </div>
     );
   }
