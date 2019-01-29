@@ -2,6 +2,7 @@
   "name": "the-game",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fabriciofmsilva.github.io/react-s2it-test",
   "engines": {
     "node": "8.x",
     "npm": "5.x"
@@ -24,6 +25,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
